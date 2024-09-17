@@ -37,7 +37,6 @@ export default function Home() {
         if (city === selectedCity) return
         setSelectedCity(city);
         setWeatherData(null);
-        setHoveredCity("")
     };
 
     return (
