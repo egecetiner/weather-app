@@ -19,7 +19,7 @@ export const fetchWeatherData = async (cityCode: string, apiKey: string): Promis
         }
         return response.json();
     } catch (error) {
-        throw new Error(error?.message || 'Hava durumu verisi alınamadı');
+        throw new Error('Hava durumu verisi alınamadı');
     }
 };
 
