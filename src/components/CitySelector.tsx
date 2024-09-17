@@ -25,11 +25,12 @@ export const CitySelector: React.FC<CitySelectorProps> = ({
                     'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-black/25'
                 )}
                 id="city"
+                defaultValue={selectedCity}
                 value={selectedCity}
                 onChange={(e) => onCityChange(e.target.value)} name="city">
                 <option value="">Şehir Seçin</option>
                 {cities.map((city) => (
-                    <option key={city.code} value={city.code}>
+                    <option key={city.code} value={city.name}>
                         {city.name}
                     </option>
                 ))}
